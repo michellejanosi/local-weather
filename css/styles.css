@@ -37,6 +37,10 @@ a {
   padding-left: .75rem;
 }
 
+a:hover {
+  color: rgba(255,255,255,0.929);
+}
+
 #container {
   display: flex;
   flex-direction: column;
