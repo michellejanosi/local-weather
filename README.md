@@ -1,4 +1,4 @@
-# Free Code Camp
+# Local Weather
 
 Intermediate Front End Development Projects - Show the Local Weather ⛈
 
