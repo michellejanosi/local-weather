@@ -1,6 +1,9 @@
 window.addEventListener("load", () => {
   let long;
   let lat;
+  let temp = document.querySelector('.temp');
+  let brief = document.querySelector('.summary');
+  let humid = document.querySelector('.humidity');
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
@@ -18,6 +21,10 @@ window.addEventListener("load", () => {
         })
         .then(data => {
           console.log(data);
+          const { temperature, summary, humidity } = data.currently;
+          temp.textContent = temperature;
+          brief.innerHTML = summary;
+          humid.textContent = humidity;
         });
     });
   }
