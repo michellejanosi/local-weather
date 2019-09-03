@@ -97,19 +97,19 @@ a:hover {
   padding-bottom: 1.2625rem;
 }
 
-.temperature {
+.temp {
   font-size: 9.25rem;
   padding-bottom: .5rem;
   cursor: pointer;
 }
 
-.details {
+.summary {
   color: rgba(255, 255, 255, 0.225);
   font-size: 1.50rem;
   padding-bottom: 1.50rem;
 }
 
-.lowhigh {
+.humidity {
   padding-bottom: .75rem;
   font-size: 1.75rem;
 }
