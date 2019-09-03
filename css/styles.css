@@ -67,7 +67,7 @@ a:hover {
 
 .inner {
   overflow-x: hidden;
-  width: 35rem;
+  width: 40rem;
   max-width: 100%;
   padding-top: 3.21875rem;
   padding-left: 4.375rem;
@@ -75,51 +75,51 @@ a:hover {
   padding-bottom: 4.21875rem;
 }
 
-.wi {
-  font-size: 5.25rem;
-}
-
-.wi-strong-wind, .wi-humidity, #details {
-  font-size: 1.50rem;
-}
-
-.wi-degress {
-  font-size: 10.25rem;
-}
-
 .location {
   color: rgba(255, 255, 255, 0.225);
-  padding-bottom: 2.2625rem;
+  padding-bottom: 2rem;
   font-size: 3.50rem;
 }
 
 .icon {
+  color: rgb(255,255,178);
+  /* color: rgba(255, 255, 255, 0.225); */
   padding-bottom: 1.2625rem;
+  padding-right: .75rem;
 }
 
 .temp {
   font-size: 9.25rem;
   padding-bottom: .5rem;
-  cursor: pointer;
+  padding-left: .75rem;
+}
+
+.icon, .temp {
+  display: inline-block;
 }
 
 .summary, .details {
   color: rgba(255, 255, 255, 0.225);
   font-size: 1.50rem;
-  padding-bottom: 1.50rem;
+  padding: 1.50rem 0;
 }
 
-.humidity {
+.humidity, .wind {
+  color: rgb(0,128,255);
   padding-bottom: .75rem;
   font-size: 1.75rem;
 }
 
-.low {
-  color: rgb(55, 56, 184);
+.wi {
+  font-size: 7rem;
 }
 
-.high {
-  color: rgb(199, 41, 234);
+.wi-humidity, .wi-strong-wind {
+  font-size: 1.50rem;
+}
+
+.wi-humidity {
+  padding-right: 10px;
 }
 
 .wi-fahrenheit, .wi-celsius {
