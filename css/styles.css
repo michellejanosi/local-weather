@@ -103,7 +103,7 @@ a:hover {
   cursor: pointer;
 }
 
-.summary {
+.summary, .details {
   color: rgba(255, 255, 255, 0.225);
   font-size: 1.50rem;
   padding-bottom: 1.50rem;
