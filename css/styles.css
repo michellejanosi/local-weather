@@ -41,7 +41,7 @@ a:hover {
   color: rgba(255,255,255,0.929);
 }
 
-#container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ a:hover {
   padding: 1.25rem 1.25rem 1.25rem 1.25rem
 }
 
-#main {
+.main {
   display: flex;
   position: relative;
   max-width: 100%;
@@ -87,29 +87,29 @@ a:hover {
   font-size: 10.25rem;
 }
 
-#location {
+.location {
   color: rgba(255, 255, 255, 0.225);
   padding-bottom: 2.2625rem;
   font-size: 3.50rem;
 }
 
-#icon {
+.icon {
   padding-bottom: 1.2625rem;
 }
 
-#temperature {
+.temperature {
   font-size: 9.25rem;
   padding-bottom: .5rem;
   cursor: pointer;
 }
 
-#details {
+.details {
   color: rgba(255, 255, 255, 0.225);
   font-size: 1.50rem;
   padding-bottom: 1.50rem;
 }
 
-#lowhigh {
+.lowhigh {
   padding-bottom: .75rem;
   font-size: 1.75rem;
 }
