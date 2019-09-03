@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Weather App</title>
+  <title>Simple Weather</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="css/weather-icons.min.css">
+  <link rel="stylesheet" href="css/weather-icons.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- favicon -->
   <link rel="icon" href="img/favicon-tint.ico" type="image/x-icon" />
@@ -15,14 +15,17 @@
   <div class="container">
     <div class="main">
       <div class="inner">
-        <div class="location">Akron, OH</div>
-        <div class="icon">sun</div>
-        <div class="summary"></div>
+        <div class="location"></div>
+        <div class="icon"></div>
+        <!-- <div class="summary"></div> -->
         <div class="temp"></div>
-        <div class="humidity"></div><i class="wi wi-humidity"></i>
-        <div class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, qui!</div>
-        <a href="#"><i class="f wi wi-fahrenheit"></i></a>
-        <a href="#"><i class="c wi wi-celsius"></i></a>
+        <div>
+          <span class="humidity"></span>
+          <span class="wind"></span>
+        </div>
+        <div class="details"></div>
+        <a class="fahrenheit" href="#"><i class="f wi wi-fahrenheit"></i></a>
+        <a class="celsius" href="#"><i class="c wi wi-celsius"></i></a>
       </div> <!-- end .inner -->
     </div> <!-- end #main -->
   </div> <!-- end #container -->
