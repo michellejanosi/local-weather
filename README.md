@@ -14,3 +14,6 @@ A minimal weather app displaying the current weather for your present location.
 ## Acknowledgments
 
 * [Stackoverflow](https://stackoverflow.com/questions/40981040/using-a-fetch-inside-another-fetch-in-javascript) - Hat tip 🎩to this page for help in stacking fetch APIs.
+
+## Screenshot
+![screenshot of app](https://github.com/michellejanosi/local-weather/blob/master/img/simple-weather.png "Weather App Screenshot")
