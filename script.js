@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
       const { temperature, humidity, icon, windSpeed } = data.currently;
       const details = data.hourly.summary;
 
-      region.innerHTML = `${city}, ${state}`;
+      region.innerHTML = city;
       weatherIcon.innerHTML = `<i class="wi wi-dark-sky-${icon}"></i>`
       temp.innerHTML = `${Math.round(temperature)}<i class="wi wi-fahrenheit"></i>`;
       humid.innerHTML = `${Math.round(humidity * 100)} <i class="wi wi-humidity"></i>`;
