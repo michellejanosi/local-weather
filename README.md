@@ -9,7 +9,7 @@ A minimal weather app displaying the current weather for your present location.
 ## Built With
 
 * [Dark Sky](https://darksky.net/dev) - The weather API used
-* [ipstack](https://ipstack.com/) - Locates and identifies visitors by IP address
+* [ipify](https://www.ipify.org/) - Locates and identifies visitors by IP address
 
 ## Acknowledgments
 
