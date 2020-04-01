@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
   // CORS error fix
   const proxy = 'https://cors-anywhere.herokuapp.com/';
   // geolocation api
-  const location = `http://api.ipstack.com/check?access_key=f0354aa3564a469fd9cdcaa6bd244022`;
+  const location = `https://geo.ipify.org/api/v1?apiKey=at_JkK3xV24MvMkAG2YHc6l1xiFTNZlC`;
 
   fetch(location)
     .then(response => {
@@ -22,10 +22,10 @@ window.addEventListener("load", () => {
     })
     .then(data => {
       // console.log(data);
-      lat = data.latitude;
-      long = data.longitude;
-      city = data.city;
-      state = data.region_code;
+      lat = data.location.lat;
+      long = data.location.lng;
+      city = data.location.city;
+      state = data.location.region;
 
       const weather = `${proxy}https://api.darksky.net/forecast/4c98d3415ce255120bf31fb7a5d00b48/${lat},${long}`;
 
