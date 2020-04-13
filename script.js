@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
   let brief = document.querySelector('.summary');
   let humid = document.querySelector('.humidity');
   let hourlyDetails = document.querySelector('.details');
+  let alertInfo = document.querySelector('.alert-title');
   let wind = document.querySelector('.wind');
   const convertToF = document.querySelector('.fahrenheit');
   const convertToC = document.querySelector('.celsius');
@@ -45,6 +46,8 @@ window.addEventListener("load", () => {
       humid.innerHTML = `${Math.round(humidity * 100)} <i class="wi wi-humidity"></i>`;
       wind.innerHTML = `${Math.round(windSpeed)} <i class="wi wi-strong-wind"></i>`
       hourlyDetails.textContent = details;
+      convertToF.innerHTML = `<i class="wi wi-fahrenheit"></i>`;
+      convertToC.innerHTML = `<i class="wi wi-celsius"></i>`;
 
       convertToF.addEventListener('click', event => {
         temp.innerHTML = `${Math.round(temperature)}<i class="wi wi-fahrenheit"></i>`
@@ -53,8 +56,18 @@ window.addEventListener("load", () => {
       convertToC.addEventListener('click', event => {
         temp.innerHTML = `${Math.round((temperature - 32) * 5 / 9)}<i class="wi wi-celsius"></i>`
       });
+
+      let alerts = data.alerts[0].title;
+
+      if (typeof alerts == 'undefined') {
+        alerts = null;
+        alertInfo.style.display = "none";
+      } else {
+        alerts = data.alerts[0].title;
+        alertInfo.textContent = alerts;
+      }
     })
     .catch(error => {
       console.log('Request failed', error);
-    });
-})
+    })
+});
